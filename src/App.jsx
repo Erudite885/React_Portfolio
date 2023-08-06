@@ -45,7 +45,7 @@ const App = () => {
           element: <Cryptocurrencies />,
         },
         {
-          path: "exchanges",
+          path: "/exchanges",
           element: <Exchanges />,
         },
         {
