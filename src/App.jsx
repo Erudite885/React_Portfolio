@@ -11,15 +11,15 @@ const App = () => {
 
   const Layout = () => {
     return (
-      <div className="main">
+      <div className="main font-sans bg-gray-300">
         <Navbar />
-        <div className="container">
-          <div className="menuContainer">
+        <div className="container flex">
+          <div className="menuContainer w-64">
             <Menu />
           </div>
-          <div className="contentContainer">
+          <div className="contentContainer px-1.5 py-5 w-full">
             {/* <QueryClientProvider client={queryClient}> */}
-              <Outlet />
+            <Outlet />
             {/* </QueryClientProvider> */}
           </div>
         </div>
