@@ -1,3 +1,6 @@
-import ReactIcon from "./react.svg";
+import ChartIcon from "./chart.svg";
+import Element from "./element.svg";
+import Home from "./home.svg";
+import Post from "./post.svg";
 
-export { ReactIcon };
+export { ChartIcon, Element, Home, Post };
