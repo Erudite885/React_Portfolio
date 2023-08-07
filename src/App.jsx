@@ -19,13 +19,11 @@ const App = () => {
       <div className="main font-sans bg-gray-300">
         <Navbar />
         <div className="container flex">
-          <div className="menuContainer w-64">
+          <div className="menuContainer w-14 md:w-48 lg:w-64">
             <Menu />
           </div>
           <div className="contentContainer">
-           
-              <Outlet />
-           
+            <Outlet />
           </div>
         </div>
         <Footer />
