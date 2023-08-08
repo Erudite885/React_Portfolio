@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { menu } from "../data";
 const Menu = () => {
   return (
-    <div className="menu bg-black bg-opacity-95 text-white">
+    <div className="menu h-full bg-black bg-opacity-95 text-white">
       {menu.map((item) => (
         <div className="item flex flex-col" key={item.id}>
           <span className="title hidden md:block text-xs font-extralight uppercase">{item.title}</span>
