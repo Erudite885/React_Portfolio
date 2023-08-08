@@ -10,15 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.5",
     "@reduxjs/toolkit": "^1.9.5",
+    "antd": "^5.8.2",
     "axios": "^1.4.0",
+    "chartjs": "^0.3.24",
+    "html-react-parser": "^4.2.0",
+    "millify": "^6.1.0",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.1",
     "sass": "^1.63.6",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
