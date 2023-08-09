@@ -9,16 +9,16 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 const { Title } = Typography;
 
 const Home = () => {
-  const { data, isFetching } = useGetCryptosQuery(10);
+  // const { data, isFetching } = useGetCryptosQuery(10);
 
-  const globalStats = data?.data?.stats;
+  // const globalStats = data?.data?.stats;
 
-  if (isFetching) return <Loader />;
+  // if (isFetching) return <Loader />;
 
   return (
     <>
-      <Title className="heading">Global Crypto Stats</Title>
-      <Row gutter={[32, 32]}>
+      <Title className="home-heading ">Global Crypto Stats</Title>
+      {/* <Row gutter={[32, 32]}>
         <Col span={12}>
           <Statistic title="Total Cryptocurrencies" value={globalStats.total} />
         </Col>
@@ -47,21 +47,29 @@ const Home = () => {
             value={millify(globalStats.totalMarkets)}
           />
         </Col>
-      </Row>
+      </Row> */}
       <div className="home-heading-container">
-        <Title level={2} className="home-title">
-          Top 10 CryptoCurrencies in the World
+        <Title level={3} className="home-title">
+          Top 10 <br className="block md:hidden  " />
+          <span className="bg-gradient-to-r text-transparent from-gray-800 via-yellow-800 to-yellow-600 bg-clip-text ">
+            {" "}
+            CryptoCurrencies
+          </span>{" "}
+          <br className="block md:hidden" /> in the World
         </Title>
-        <Title level={3} className="show-more">
+        <Title level={4} className="show-more">
           <Link to="/cryptocurrencies">Show more</Link>
         </Title>
       </div>
       <Cryptocurrencies simplified />
       <div className="home-heading-container">
-        <Title level={2} className="home-title">
-          Latest CryptoCurrency News
+        <Title level={3} className="home-title">
+          Latest{" "}
+          <span className="bg-gradient-to-r text-transparent from-gray-800 via-yellow-800 to-yellow-600 bg-clip-text ">
+         CryptoCurrency </span>{" "}
+           News
         </Title>
-        <Title level={3}>
+        <Title level={4}>
           <Link to="/news">Show more</Link>
         </Title>
       </div>
