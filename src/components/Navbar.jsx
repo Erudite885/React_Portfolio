@@ -1,21 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <Link to="/">
-      <div className="bg-black bg-opacity-95 text-white flex items-center px-3 py-4 sm:py-8 gap-3">
-        <img
-          src="../cryptocurrency.png"
-          alt=""
-          className="hidden sm:block w-10 h-15"
-        />
-        <div className="wrapper ">
-          <div className="bg ">Cryptomania</div>
-          <div className="fg">Cryptomania</div>
+    <div className="flex flex-col bg-black bg-opacity-95">
+      <Link to="/">
+        <div className="flex gap-3 p-4">
+          <img
+            src="../cryptocurrency.png"
+            alt=""
+            className="w-10 h-15 hidden lg:block"
+          />
+          <div className="wrapper ">
+            <div className="bg ">Cryptomania</div>
+            <div className="fg">Cryptomania</div>
+          </div>
         </div>
+      </Link>
+      <div className="menuContainer lg:hidden ">
+        <Menu />
       </div>
-    </Link>
+    </div>
   );
 };
 
