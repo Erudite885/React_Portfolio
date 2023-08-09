@@ -11,18 +11,16 @@ import {
   News,
 } from "./components/index";
 
-import "./App.scss";
-
 const App = () => {
   const Layout = () => {
     return (
-      <div className="main font-sans bg-gray-300">
+      <div className="amain flex flex-col 2xl:max-w-[70%] lg:mx-auto">
         <Navbar />
-        <div className="container flex">
-          <div className="menuContainer w-14 md:w-48 lg:w-64">
+        <div className="appcontainer bg-[#b9b9b9] flex">
+          <div className="menuContainer hidden lg:block ">
             <Menu />
           </div>
-          <div className="contentContainer">
+          <div className="contentContainer p-2 m-4">
             <Outlet />
           </div>
         </div>
