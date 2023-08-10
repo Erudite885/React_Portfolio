@@ -13,14 +13,14 @@ const { Option } = Select;
 
 const News = ({ simplified }) => {
   const [newsCategory, setNewsCategory] = useState("Crytocurrency");
-  const { data } = useGetCryptosQuery(100);
   const { data: cryptoNews } = useGetCryptoNewsQuery({
-    newsCategory: "Cryptocurrency",
-    count: simplified ? 6 : 12,
+    newsCategory: newsCategory,
+    count: simplified ? 12 : 20,
   });
+  const { data } = useGetCryptosQuery(100);
 
   if (!cryptoNews?.value) return <Loader />;
-
+  
   return (
     <Row gutter={[24, 24]}>
       {!simplified && (
@@ -43,7 +43,7 @@ const News = ({ simplified }) => {
         </Col>
       )}
       {cryptoNews.value.map((news, i) => (
-        <Col xs={24} sm={12} lg={8} key={i}>
+        <Col xs={24} sm={12} lg={8} key={news.name}>
           <Card hoverable className="news-card">
             <a href={news.url} target="_blank" rel="noreferrer">
               <div className="news-image-container">
