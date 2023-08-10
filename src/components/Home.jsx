@@ -9,16 +9,16 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 const { Title } = Typography;
 
 const Home = () => {
-  // const { data, isFetching } = useGetCryptosQuery(10);
+  const { data, isFetching } = useGetCryptosQuery(10);
 
-  // const globalStats = data?.data?.stats;
+  const globalStats = data?.data?.stats;
 
-  // if (isFetching) return <Loader />;
+  if (isFetching) return <Loader />;
 
   return (
     <>
       <Title className="home-heading ">Global Crypto Stats</Title>
-      {/* <Row gutter={[32, 32]}>
+      <Row gutter={[32, 32]}>
         <Col span={12}>
           <Statistic title="Total Cryptocurrencies" value={globalStats.total} />
         </Col>
@@ -47,8 +47,8 @@ const Home = () => {
             value={millify(globalStats.totalMarkets)}
           />
         </Col>
-      </Row> */}
-      <div className="home-heading-container">
+      </Row>
+      <div className="home-heading-container mt-12">
         <Title level={3} className="home-title">
           Top 10 <br className="block md:hidden  " />
           <span className="bg-gradient-to-r text-transparent from-gray-800 via-yellow-800 to-yellow-600 bg-clip-text ">
@@ -62,7 +62,7 @@ const Home = () => {
         </Title>
       </div>
       <Cryptocurrencies simplified />
-      <div className="home-heading-container">
+      <div className="home-heading-container mt-12">
         <Title level={3} className="home-title">
           Latest{" "}
           <span className="bg-gradient-to-r text-transparent from-gray-800 via-yellow-800 to-yellow-600 bg-clip-text ">
