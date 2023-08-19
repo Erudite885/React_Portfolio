@@ -2,11 +2,13 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
 
 export const cryptoExchangeApi = createApi({
   reducerPath: "cryptoExchangeApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://api.coingecko.com/api/v3" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: import.meta.env.VITE_CRYPTOEXCHANGEAPI_RAPIDAPI_BASEURL,
+  }),
   endpoints: (builder) => ({
     getCryptoMarket: builder.query({
       query: () => {
-        return `https://api.coingecko.com/api/v3/exchanges`;
+        return `exchanges`;
       },
     }),
     getCryptoExchange: builder.query({
@@ -17,6 +19,7 @@ export const cryptoExchangeApi = createApi({
   }),
 });
 
-export const { useGetCryptoExchangeQuery, useGetCryptoMarketQuery } = cryptoExchangeApi;
+export const { useGetCryptoExchangeQuery, useGetCryptoMarketQuery } =
+  cryptoExchangeApi;
 
 console.log();
