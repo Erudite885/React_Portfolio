@@ -15,7 +15,7 @@ const Exchanges = () => {
 
   const exchangesList = data;
   const marketList = marketData;
-  
+
   if (isFetching) return <Loader />;
 
   if (!exchangesList.value || !marketList.value) return <Loader />;
@@ -66,7 +66,12 @@ const Exchanges = () => {
       <div className="flex items-center gap-2 lg:flex-col p-2">
         <h1 className="font-bold mb-4 text-xl">%Change</h1>
         {exchangesList.map((exchange) => (
-          <h2 className="text-xl h-14">
+          <h2
+            className="text-xl h-14"
+            style={{
+              color: currency.change < 0 ? "tomato" : "limegreen",
+            }}
+          >
             {millify(exchange.price_change_percentage_24h)}%
           </h2>
         ))}
