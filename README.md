@@ -30,3 +30,6 @@ The features includes:
 - The Mobile View
 
 ![Details Page](./src/assets/Cryptomania-mobile.png)
+
+Powered by:
+Vite React App
