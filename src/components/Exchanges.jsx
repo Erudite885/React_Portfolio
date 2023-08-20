@@ -18,16 +18,14 @@ const Exchanges = () => {
 
   if (isFetching) return <Loader />;
 
-  if (!exchangesList.value || !marketList.value) return <Loader />;
-
   console.log(exchangesList);
   console.log(marketList);
 
   return (
-    <div className="flex flex-col lg:flex-row gap-16 bg-black text-white p-4 rounded w-[85vw] justify-center text-center ">
-      <div className="flex items-center gap-2 lg:flex-col p-2">
+    <div className="flex flex-col md:flex-row gap-16 bg-black text-white p-4 rounded w-[81vw] justify-center text-center ">
+      <div className="flex items-center overflow-x-auto md:items-start gap-4 md:flex-col p-2">
         <h1 className="font-bold w-full text-xl">Exchanges</h1>
-        {exchangesList.map((exchange) => (
+        {exchangesList?.map((exchange) => (
           <div className="flex items-center gap-4">
             <img
               src={exchange.image}
@@ -40,17 +38,17 @@ const Exchanges = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center gap-2 lg:flex-col p-2">
+      <div className="flex items-center overflow-x-auto gap-4 md:flex-col p-2">
         <h1 className="font-bold w-full text-xl">24h Vol.</h1>
-        {marketList.map((market) => (
+        {marketList?.map((market) => (
           <h2 className="text-xl mt-2 h-12">
             ${millify(market.trade_volume_24h_btc)}
           </h2>
         ))}
       </div>
-      <div className="flex items-center gap-2 lg:flex-col p-2">
+      <div className="flex items-center overflow-x-auto md:items-start gap-4 md:flex-col p-2">
         <h1 className="font-bold w-full text-xl">Markets</h1>
-        {marketList.map((market) => (
+        {marketList?.map((market) => (
           <div className="flex items-center gap-4">
             <img
               src={market.image}
@@ -63,13 +61,16 @@ const Exchanges = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center gap-2 lg:flex-col p-2">
+      <div className="flex items-center overflow-x-auto gap-4 md:flex-col p-2">
         <h1 className="font-bold mb-4 text-xl">%Change</h1>
-        {exchangesList.map((exchange) => (
+        {exchangesList?.map((exchange) => (
           <h2
             className="text-xl h-14"
             style={{
-              color: currency.change < 0 ? "tomato" : "limegreen",
+              color:
+                exchange.price_change_percentage_24h < 0
+                  ? "tomato"
+                  : "limegreen",
             }}
           >
             {millify(exchange.price_change_percentage_24h)}%

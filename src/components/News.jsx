@@ -6,7 +6,8 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 import { Loader } from "./index";
 
-const demoImage = "";
+const demoImage =
+  "https://cdn.pixabay.com/photo/2018/01/16/01/02/cryptocurrency-3085139_1280.jpg";
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -20,7 +21,7 @@ const News = ({ simplified }) => {
   const { data } = useGetCryptosQuery(100);
 
   if (!cryptoNews?.value) return <Loader />;
-  
+
   return (
     <Row gutter={[24, 24]}>
       {!simplified && (
@@ -44,14 +45,23 @@ const News = ({ simplified }) => {
       )}
       {cryptoNews.value.map((news, i) => (
         <Col xs={24} sm={12} lg={8} key={news.name}>
-          <Card hoverable className="news-card">
+          <Card
+            hoverable
+            className="news-card"
+            style={{ boxShadow: " 0 3px 5px #bd8b00" }}
+          >
             <a href={news.url} target="_blank" rel="noreferrer">
               <div className="news-image-container">
                 <Title level={4} className="news-title">
                   {news.name}
                 </Title>
                 <img
-                  style={{ maxWidth: "200px", maxHeight: "100px" }}
+                  style={{
+                    maxWidth: "100px",
+                    maxHeight: "100px",
+                    borderRadius: "50%",
+                    borderColor: "gold",
+                  }}
                   src={news?.image?.thumbnail?.contentUrl || demoImage}
                   alt={news.name}
                 />
@@ -74,7 +84,7 @@ const News = ({ simplified }) => {
                     {news.provider[0]?.name}
                   </Text>
                 </div>
-                <Text>
+                <Text className="provider-published">
                   {moment(news.datePublished).startOf("ss").fromNow()}
                 </Text>
               </div>

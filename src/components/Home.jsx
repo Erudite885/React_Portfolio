@@ -17,8 +17,11 @@ const Home = () => {
 
   return (
     <>
-      <Title className="home-heading ">Global Crypto Stats</Title>
-      <Row gutter={[32, 32]}>
+      <Title className="home-heading">Global Crypto Stats</Title>
+      <Row
+        gutter={[32, 32]}
+        style={{ backgroundColor: "#ccc", borderRadius: "8px" }}
+      >
         <Col span={12}>
           <Statistic title="Total Cryptocurrencies" value={globalStats.total} />
         </Col>
@@ -51,7 +54,7 @@ const Home = () => {
       <div className="home-heading-container mt-12">
         <Title level={3} className="home-title">
           Top 10 <br className="block md:hidden  " />
-          <span className="bg-gradient-to-r text-transparent from-gray-800 via-yellow-800 to-yellow-600 bg-clip-text ">
+          <span className="bg-gradient-to-r text-transparent from-gray-400 via-yellow-200 to-yellow-600 bg-clip-text ">
             {" "}
             CryptoCurrencies
           </span>{" "}
@@ -65,11 +68,12 @@ const Home = () => {
       <div className="home-heading-container mt-12">
         <Title level={3} className="home-title">
           Latest{" "}
-          <span className="bg-gradient-to-r text-transparent from-gray-800 via-yellow-800 to-yellow-600 bg-clip-text ">
-         CryptoCurrency </span>{" "}
-           News
+          <span className="bg-gradient-to-r text-transparent from-gray-400 via-yellow-200 to-yellow-600 bg-clip-text ">
+            CryptoCurrency{" "}
+          </span>{" "}
+          News
         </Title>
-        <Title level={4}>
+        <Title level={4} className="show-more">
           <Link to="/news">Show more</Link>
         </Title>
       </div>

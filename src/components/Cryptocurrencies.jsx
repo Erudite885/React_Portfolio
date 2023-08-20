@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import millify from "millify";
-import { Card, Col, Input, Row } from "antd";
+import { Card, Col, Input, Row, Typography } from "antd";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import { Loader } from "./index";
+
+const { Text, Title } = Typography;
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;
@@ -14,7 +16,7 @@ const Cryptocurrencies = ({ simplified }) => {
 
   useEffect(() => {
     const filteredData = cryptosList?.data?.coins.filter((item) =>
-    item.name.toLowerCase().includes(searchTerm)
+      item.name.toLowerCase().includes(searchTerm)
     );
 
     setCryptos(filteredData);
@@ -27,8 +29,7 @@ const Cryptocurrencies = ({ simplified }) => {
       {!simplified && (
         <div className="search-crypto">
           <Input
-            onChange={(e) =>
-              setSearchTerm(e.target.value.toLowerCase())}
+            onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
             placeholder="Search Cryptocurrency"
           />
         </div>
@@ -45,13 +46,27 @@ const Cryptocurrencies = ({ simplified }) => {
             <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
               <Card
                 hoverable
-                title={`${currency.rank}. ${currency.name}`}
-                extra={<img className="crypto-image" src={currency.iconUrl} />}
+                style={{
+                  backgroundColor: "black",
+                  boxShadow: " 0 3px 5px #bd8b00",
+                }}
               >
-                <p>Price: {millify(currency.price)}</p>
-                <p>Market Cap: {millify(currency.marketCap)}</p>
-                <p>
-                  Daily Change:{" "}
+                <div className="news-image-container">
+                  <Title
+                    style={{ color: "white" }}
+                    level={4}
+                  >{`${currency.rank}. ${currency.name}`}</Title>
+                  <img className="crypto-image" src={currency.iconUrl} />
+                </div>
+                <p style={{ color: "white" }}>
+                  Price: {millify(currency.price)}
+                </p>
+                <p style={{ color: "white" }}>
+                  Market Cap: {millify(currency.marketCap)}
+                </p>
+
+                <div className="news-image-container">
+                  <p style={{ color: "white" }}>Daily Change:</p>
                   <span
                     style={{
                       color: currency.change < 0 ? "tomato" : "limegreen",
@@ -59,7 +74,7 @@ const Cryptocurrencies = ({ simplified }) => {
                   >
                     {currency.change}%
                   </span>
-                </p>
+                </div>
               </Card>
             </Link>
           </Col>
