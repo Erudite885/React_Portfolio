@@ -16,7 +16,7 @@ const App = () => {
     return (
       <div className="amain flex flex-col 2xl:max-w-[70%] lg:mx-auto">
         <Navbar />
-        <div className="appcontainer bg-[#b9b9b9] flex">
+        <div className="appcontainer bg-[#000] flex">
           <div className="menuContainer hidden lg:block ">
             <Menu />
           </div>
