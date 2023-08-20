@@ -1,4 +1,4 @@
-##  [CRYPTOMANIA](cryptomania-git-main-erudite885.vercel.app)
+##  [CRYPTOMANIA](https://cryptomania-l9sukp9da-erudite885.vercel.app/)
 
 World-Class Cryptocurrency website where
 you can get infomation about over a 100 Cryptocurrencies, Exchanges, Markets and News related to all Cryptocurrency to keep you updated.
