@@ -106,12 +106,12 @@ const CryptoDetails = () => {
   ];
 
   return (
-    <Col className="coin-detail-container">
+    <Col className="coin-detail-container ">
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
           {cryptoDetails?.name} ({cryptoDetails?.symbol}) Price
         </Title>
-        <p>
+        <p className="text-white">
           {cryptoDetails?.name} live price in US Dollars ($). View value
           statistics, market cap and supply.{" "}
         </p>
@@ -137,7 +137,7 @@ const CryptoDetails = () => {
             <Title level={3} className="coin-details-heading">
               {cryptoDetails?.name} Value Statistics
             </Title>
-            <p>
+            <p style={{ color: "white" }}>
               An overview showing the statistics of {cryptoDetails?.name}, such
               as the base and quote currency, the rank, and trading volume.{" "}
             </p>
@@ -145,19 +145,27 @@ const CryptoDetails = () => {
           {stats?.map(({ icon, title, value }) => (
             <Col className="coin-stats" key={title}>
               <Col className="coin-stats-name">
-                <Text>{icon}</Text>
-                <Text>{title}</Text>
+                <Text style={{ color: "white" }}>{icon}</Text>
+                <Text style={{ color: "white" }}>{title}</Text>
               </Col>
-              {value && <Text className="stats">{value}</Text>}
+              {value && (
+                <Text style={{ color: "white" }} className="stats">
+                  {value}
+                </Text>
+              )}
             </Col>
           ))}
         </Col>
         <Col className="other-stats-info">
           <Col className="coin-value-statistics-heading">
-            <Title level={3} className="coin-details-heading">
+            <Title
+              style={{ color: "white" }}
+              level={3}
+              className="coin-details-heading"
+            >
               Other Stats Info
             </Title>
-            <p>
+            <p style={{ color: "white" }}>
               An overview showing the statistics of {cryptoDetails.name}, such
               as the base and quote currency, the rank, and trading volume.{" "}
             </p>
@@ -165,16 +173,18 @@ const CryptoDetails = () => {
           {genericStats.map(({ icon, title, value }) => (
             <Col className="coin-stats">
               <Col className="coin-stats-name">
-                <Text>{icon}</Text>
-                <Text>{title}</Text>
+                <Text style={{ color: "white" }}>{icon}</Text>
+                <Text style={{ color: "white" }}>{title}</Text>
               </Col>
-              <Text className="stats">{value}</Text>
+              <Text style={{ color: "white" }} className="stats">
+                {value}
+              </Text>
             </Col>
           ))}
         </Col>
       </Col>
       <Col className="coin-desc-link">
-        <Row className="coin-desc">
+        <Row style={{ color: "white" }} className="coin-desc">
           <Title level={3} className="coin-details-heading">
             What is {cryptoDetails.name}
           </Title>
@@ -185,8 +195,8 @@ const CryptoDetails = () => {
             {cryptoDetails.name} Links
           </Title>
           {cryptoDetails.links?.map((link) => (
-            <Row className="coin-link" key={link.name}>
-              <Title level={5} className="link-name">
+            <Row  className="coin-link" key={link.name}>
+              <Title style={{ color: "white" }} level={5} className="link-name">
                 {link.type}
               </Title>
               <a href={link.url} target="_blank" rel="noreferrer">
