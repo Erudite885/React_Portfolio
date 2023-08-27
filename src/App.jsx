@@ -1,30 +1,33 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import {
-  CryptoDetails,
-  Cryptocurrencies,
-  Exchanges,
-  Footer,
-  Home,
-  Menu,
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
   Navbar,
-  News,
-} from "./components/index";
+  Tech,
+  Works,
+} from "./components";
 
 const App = () => {
   const Layout = () => {
     return (
-      <div className="amain flex flex-col 2xl:max-w-[70%] lg:mx-auto">
-        <Navbar />
-        <div className="appcontainer bg-[#000] flex">
-          <div className="menuContainer hidden lg:block ">
-            <Menu />
-          </div>
-          <div className="contentContainer p-2 m-4">
-            <Outlet />
-          </div>
+      <div>
+        <div>
+          <Navbar />
+          <Hero />
         </div>
-        <Footer />
+        <Tech />
+        <Experience />
+        <Works />
+        <About />
+        <Feedbacks />
+        <div>
+          <Contact />
+          {/* <StarsCanvas /> */}
+        </div>
       </div>
     );
   };
@@ -33,28 +36,28 @@ const App = () => {
     {
       path: "/",
       element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/cryptocurrencies",
-          element: <Cryptocurrencies />,
-        },
-        {
-          path: "/exchanges",
-          element: <Exchanges />,
-        },
-        {
-          path: "/crypto/:id",
-          element: <CryptoDetails />,
-        },
-        {
-          path: "/news",
-          element: <News />,
-        },
-      ],
+      // children: [
+      //   {
+      //     path: "/",
+      //     element: <Home />,
+      //   },
+      //   {
+      //     path: "/cryptocurrencies",
+      //     element: <Cryptocurrencies />,
+      //   },
+      //   {
+      //     path: "/exchanges",
+      //     element: <Exchanges />,
+      //   },
+      //   {
+      //     path: "/crypto/:id",
+      //     element: <CryptoDetails />,
+      //   },
+      //   {
+      //     path: "/news",
+      //     element: <News />,
+      //   },
+      // ],
     },
   ]);
 
