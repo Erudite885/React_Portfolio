@@ -14,6 +14,7 @@ const Tech = () => {
           />
         </div>
       ))}
+      <div className="w-[240px] h-[240px] absolute rounded-full bg-gradient-to-tr from-blue-100 via-cyan-700 to-blue-800 opacity-20 blur-3xl top-[40%] " />
     </div>
   );
 };

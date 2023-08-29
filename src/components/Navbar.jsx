@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-10 fixed top-0 z-20 ${
+      } w-full flex items-center py-6 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           {/* <img src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
-          <p className="text-slate-100 tracking-[1.05px] text-2xl md:text-4xl xl:text-5xl uppercase font-sans font-bold cursor-pointer flex ">
+          <p className="text-slate-100 tracking-[1.05px] text-3xl md:text-4xl xl:text-5xl uppercase font-sans font-bold cursor-pointer flex ">
             Bianca Uche
           </p>
         </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-2xl md:text-2xl lg:text-3xl font-medium cursor-pointer`}
+              } hover:text-white text-xl md:text-2xl font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
