@@ -9,24 +9,25 @@ import {
   Navbar,
   Tech,
   Works,
+  StarsCanvas
 } from "./components";
 
 const App = () => {
   const Layout = () => {
     return (
-      <div>
-        <div>
+      <div className="relative z-0 bg-primary ">
+        <div className="bg-hero-pattern bg-contain bg-no-repeat">
           <Navbar />
           <Hero />
         </div>
-        <Tech />
-        <Experience />
-        <Works />
         <About />
+        <Tech />
+        <Works />
+        {/* <Experience /> */}
         <Feedbacks />
-        <div>
+        <div className="relative z-0">
           <Contact />
-          {/* <StarsCanvas /> */}
+          <StarsCanvas />
         </div>
       </div>
     );
@@ -40,22 +41,6 @@ const App = () => {
       //   {
       //     path: "/",
       //     element: <Home />,
-      //   },
-      //   {
-      //     path: "/cryptocurrencies",
-      //     element: <Cryptocurrencies />,
-      //   },
-      //   {
-      //     path: "/exchanges",
-      //     element: <Exchanges />,
-      //   },
-      //   {
-      //     path: "/crypto/:id",
-      //     element: <CryptoDetails />,
-      //   },
-      //   {
-      //     path: "/news",
-      //     element: <News />,
       //   },
       // ],
     },

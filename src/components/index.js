@@ -1,18 +1,32 @@
-// import {
-//   EarthCanvas,
-//   BallCanvas,
-//   ComputersCanvas,
-//   StarsCanvas,
-// } from "./canvas";
+import {
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
+} from "./canvas";
 
-// export { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas };
+import Navbar from "./Navbar";
+import About from "./About";
+import Contact from "./Contact";
+import Experience from "./Experience";
+import Feedbacks from "./Feedbacks";
+import Hero from "./Hero";
+import CanvasLoader from "./Loader";
+import Tech from "./Tech";
+import Works from "./Works";
 
-export { default as Navbar } from "./Navbar";
-export { default as About } from "./About";
-export { default as Contact } from "./Contact";
-export { default as Experience } from "./Experience";
-export { default as Feedbacks } from "./Feedbacks";
-export { default as Hero } from "./Hero";
-export { default as CanvasLoader } from "./Loader";
-export { default as Tech } from "./Tech";
-export { default as Works } from "./Works";
+export {
+  Navbar,
+  CanvasLoader,
+  Feedbacks,
+  Hero,
+  About,
+  Experience,
+  Tech,
+  Contact,
+  Works,
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
+};

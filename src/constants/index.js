@@ -1,6 +1,5 @@
 import {
   mobile,
-  backend,
   creator,
   web,
   javascript,
@@ -14,7 +13,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -27,12 +25,12 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
-  },
-  {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "about",
+    title: "About",
   },
   {
     id: "contact",
@@ -42,16 +40,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front End Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
   },
   {
     title: "Content Creator",
@@ -61,24 +55,16 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Redux Toolkit",
@@ -89,8 +75,21 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+
+  {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "figma",
+    icon: figma,
   },
   {
     name: "MongoDB",
@@ -103,14 +102,6 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
