@@ -10,22 +10,15 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
-      iconStyle={{ background: "red" }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={experience.icon || 'green'}
-            alt={experience.company_name}
-            className="w-3/5 h-3/5 object-contain"
-          />
-        </div>
+        <div className="bg-gradient-to-r rounded-full from-fuchsia-950 via-orange-950 to-rose-800 flex justify-center items-center w-full h-full" />
       }
     >
       <div>

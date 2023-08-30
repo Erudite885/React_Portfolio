@@ -9,7 +9,8 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas
+  StarsCanvas,
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -22,13 +23,14 @@ const App = () => {
         </div>
         <Works />
         <About />
-        <Experience />
         <Tech />
+        <Experience />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     );
   };
@@ -37,12 +39,6 @@ const App = () => {
     {
       path: "/",
       element: <Layout />,
-      // children: [
-      //   {
-      //     path: "/",
-      //     element: <Home />,
-      //   },
-      // ],
     },
   ]);
 

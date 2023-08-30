@@ -1,7 +1,5 @@
 import {
-  mobile,
-  creator,
-  web,
+ 
   javascript,
   typescript,
   html,
@@ -17,10 +15,16 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+ 
   threejs,
+  Nikeland,
+  CoffeeRoasters,
+  CinemaWorldLight,
+  AdminOverview,
+  People01,
+  People02,
+  Team4,
+  CryptomaniaShort,
 } from "../assets";
 
 export const navLinks = [
@@ -35,21 +39,6 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Front End Developer",
-    icon: web,
-  },
-  {
-    title: "React Developer",
-    icon: mobile,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -132,64 +121,64 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
-  //   icon: shopify,
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Bianca proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: People01,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+      "I've never met a frontend developer who truly cares about their clients' success like Bianca does.",
+    name: "Chris Jared",
     designation: "COO",
     company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: People02,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Bianca optimized our website, our traffic increased by 50%. We can't thank her enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: Team4,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cinema World",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tmdb Api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Alan AI",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: CinemaWorldLight,
+    source_code_link: "https://github.com/",
+    web_link: "",
+  },
+  {
+    name: "Admin Dashboard",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -202,15 +191,38 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: AdminOverview,
     source_code_link: "https://github.com/",
+    web_link: "",
   },
   {
-    name: "Job IT",
+    name: "Cryptomania",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "coinApi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AntD",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: CryptomaniaShort,
+    source_code_link: "https://github.com/",
+    web_link: "",
+  },
+  {
+    name: "Coffee Roasters",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -219,38 +231,66 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "landing",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: CoffeeRoasters,
     source_code_link: "https://github.com/",
+    web_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Nike Landing",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "responsive",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "landing",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Nikeland,
+    source_code_link: "https://github.com/",
+    web_link: "",
+  },
+  {
+    name: "Nike Landing",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: Nikeland,
     source_code_link: "https://github.com/",
+    web_link: "",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };

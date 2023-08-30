@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  // console.log(navLinks)
+
   useEffect(() => {
     const scrollHandler = () => {
       const scrollTop = window.scrollY;
@@ -42,8 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
-          <p className="text-slate-100 tracking-[1.05px] text-3xl md:text-4xl xl:text-5xl uppercase font-sans font-bold cursor-pointer flex ">
+         <p className="text-slate-100 tracking-[1.05px] text-3xl md:text-4xl xl:text-5xl uppercase font-sans font-bold cursor-pointer flex ">
             Bianca Uche
           </p>
         </Link>

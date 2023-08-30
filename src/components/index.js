@@ -14,6 +14,7 @@ import Hero from "./Hero";
 import CanvasLoader from "./Loader";
 import Tech from "./Tech";
 import Works from "./Works";
+import Footer from "./footer";
 
 export {
   Navbar,
@@ -29,4 +30,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Footer,
 };
