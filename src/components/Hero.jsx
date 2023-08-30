@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-[48rem] mx-auto`}>
+    <section className={`relative w-full h-[40rem] xl:h-[50rem] 2xl:h-[57rem] mx-auto`}>
       <div
         className={`absolute gap-5 sm:gap-16 lg:gap-24 xl:gap-8 z-10 inset-0 top-[100px] lg:top-[140px] xl:top-[25px] max-w-7xl mx-auto flex flex-row items-start xl:items-center xl:justify-center `}
       >
@@ -16,7 +16,7 @@ const Hero = () => {
             className={` py-1 rounded bg-gradient-to-r from-fuchsia-800 via-orange-600 to-rose-600`}
           />
           <h1
-            className={`lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] bg-gradient-to-br from-slate-100 to-sky-200 font-extrabold mt-10 tracking-wider max-w-md xl:max-w-full text-transparent bg-clip-text`}
+            className={`lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] bg-gradient-to-br from-slate-100 to-sky-200 font-extrabold mt-10 tracking-wider max-w-full xl:max-w-full text-transparent bg-clip-text`}
           >
             FRONTEND DEVELOPER
           </h1>

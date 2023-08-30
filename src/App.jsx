@@ -17,7 +17,7 @@ const App = () => {
   const Layout = () => {
     return (
       <div className="relative z-0 bg-primary ">
-        <div className="bg-hero-pattern bg-contain bg-no-repeat">
+        <div className="bg-hero-pattern bg-contain 2xl:bg-cover bg-no-repeat">
           <Navbar />
           <Hero />
         </div>

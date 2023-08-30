@@ -79,7 +79,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <div className="bg-slate-500 rounded-2xl sm:px-14 px-6 sm:py-16 py-10 min-h-[300px]">
+      <div className="bg-slate-600 rounded-2xl sm:px-14 px-6 sm:py-16 py-10 min-h-[300px]">
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText}`}>My Work</p>
           <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -108,4 +108,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

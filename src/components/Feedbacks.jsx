@@ -47,7 +47,7 @@ const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-slate-500 rounded-[20px]`}>
       <div
-        className={`bg-slate-500 rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-slate-600 rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={`text-slate-50 font-semibold ${styles.sectionSubText}`}>

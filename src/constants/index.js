@@ -25,6 +25,7 @@ import {
   People02,
   Team4,
   CryptomaniaShort,
+  MarketPlace,
 } from "../assets";
 
 export const navLinks = [
@@ -196,8 +197,8 @@ const projects = [
       },
     ],
     image: AdminOverview,
-    source_code_link: "https://github.com/",
-    web_link: "",
+    source_code_link: "https://github.com/Erudite885/admin_dashboard",
+    web_link: "https://admin-dashboard-fawn-kappa.vercel.app",
   },
   {
     name: "Cryptomania",
@@ -218,8 +219,8 @@ const projects = [
       },
     ],
     image: CryptomaniaShort,
-    source_code_link: "https://github.com/",
-    web_link: "",
+    source_code_link: "https://github.com/Erudite885/cryptomania",
+    web_link: "https://cryptomania-eta.vercel.app",
   },
   {
     name: "Coffee Roasters",
@@ -244,7 +245,7 @@ const projects = [
     web_link: "https://github.com/",
   },
   {
-    name: "Nike Landing",
+    name: "MarketPlace",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -253,21 +254,21 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "responsive",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "scss",
         color: "pink-text-gradient",
       },
       {
-        name: "landing",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
     ],
-    image: Nikeland,
+    image: MarketPlace,
     source_code_link: "https://github.com/",
-    web_link: "",
+    web_link: "https://github.com/",
   },
   {
     name: "Nike Landing",
@@ -288,8 +289,8 @@ const projects = [
       },
     ],
     image: Nikeland,
-    source_code_link: "https://github.com/",
-    web_link: "",
+    source_code_link: "https://github.com/Erudite885/nike_landing_page",
+    web_link: "https://nikesfooty.netlify.app/",
   },
 ];
 

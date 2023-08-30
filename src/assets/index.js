@@ -34,12 +34,14 @@ import AdminOverview from "./admin_overview.png";
 import CinemaWorldDark from "./CinemaWorld-dark.png";
 import CinemaWorldLight from "./CinemaWorld-light.png";
 import CryptomaniaShort from "./CryptomaniaShort.png";
+import MarketPlace from "./MarketPlace.png";
 
 import Linkedin from "./linkedin.svg";
 import Twitter from "./twitter.svg";
 import Instagram from "./instagram.svg";
 
 export {
+  MarketPlace,
   Linkedin,
   Twitter,
   Instagram,
