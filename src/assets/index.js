@@ -24,7 +24,7 @@ import tesla from "./company/tesla.png";
 
 import People01 from "./people01.png";
 import People02 from "./people02.png";
-import Send from "./send.svg";
+// import Send from "./send.svg";
 import Team1 from "./team-1.jpg";
 import Team4 from "./team-4.jpg";
 import Nikeland from "./nikelandshort.png";
@@ -47,7 +47,7 @@ export {
   Instagram,
   People01,
   People02,
-  Send,
+  // Send,
   Team1,
   Team4,
   Nikeland,

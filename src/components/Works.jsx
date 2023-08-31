@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { Send, github } from "../assets";
+import {
+  // Send,
+  github
+} from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -49,14 +52,14 @@ const ProjectCard = ({
             >
               {name}{" "}
             </h3>
-            <span>
+            {/* <span>
               <img
                 onClick={() => window.open(web_link, "_blank")}
-                src={Send}
+                // src={Send}
                 alt="Go to webpage"
                 className="cursor-pointer orange-text-gradient w-5 h-5"
               />
-            </span>
+            </span> */}
           </div>
           <p className="mt-2 text-secondary text-[14px] ">{description} </p>
         </div>
