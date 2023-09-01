@@ -16,6 +16,8 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
+  console.log(form.name)
+
   const changeHandler = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -31,7 +33,7 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
+      .sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
