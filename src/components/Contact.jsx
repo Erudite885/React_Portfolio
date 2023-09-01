@@ -16,7 +16,7 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  console.log(form.name)
+  console.log(form.name, form.email, form.message)
 
   const changeHandler = (e) => {
     const { target } = e;
@@ -46,7 +46,8 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
-        () => {
+        (res) => {
+          console.log(res)
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possibile.");
 
