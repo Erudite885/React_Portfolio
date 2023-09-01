@@ -1,5 +1,4 @@
 import {
- 
   javascript,
   typescript,
   html,
@@ -15,7 +14,6 @@ import {
   starbucks,
   tesla,
   shopify,
- 
   threejs,
   Nikeland,
   CoffeeRoasters,
@@ -155,7 +153,7 @@ const projects = [
   {
     name: "Cinema World",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Cinema World is an app where you can find all of the movies in the world. This application includes user authentication, dark mode, movie sorting based on categories or genres, movie addition to favorites or watchlist, an in-app voice assistant (Alan) and more...",
     tags: [
       {
         name: "react",
@@ -181,7 +179,7 @@ const projects = [
   {
     name: "Admin Dashboard",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An elegant Admin dashboard built using React Router, React, SCSS, & Chartjs.",
     tags: [
       {
         name: "react",
@@ -203,7 +201,7 @@ const projects = [
   {
     name: "Cryptomania",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Cryptomania is a Crypto-currency app that shows detailed data of all the world's crypocurrencies and the latest news in the crypto scene. Check LIVE cryptocurrency price changes for several coins and exchanges. Powered by RapidAPI ",
     tags: [
       {
         name: "react",
@@ -225,7 +223,7 @@ const projects = [
   {
     name: "Coffee Roasters",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Landing Page where users search for coffee menu, prices, and available variety.",
     tags: [
       {
         name: "react",
@@ -247,7 +245,10 @@ const projects = [
   {
     name: "MarketPlace",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Web-based platform that allows users to search, purchase, \
+      and manage digital assets from various providers, \
+       and sellers can providing a convenient and \
+      efficient solution for product distribution.",
     tags: [
       {
         name: "react",
@@ -273,7 +274,7 @@ const projects = [
   {
     name: "Nike Landing",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Landing page that allows users to view Sports shoes from Nike Brand providing a convenient and efficient solution for sports/fitness needs.",
     tags: [
       {
         name: "react",
