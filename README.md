@@ -1,4 +1,5 @@
-##  [React Portfolio](https://bianca-uche.netlify.app/)
+##  [React Portfolio](https://react-portfolio-lac-rho.vercel.app/)
+
 
 ### About
 This is an Elegant Portfolio, showing a summary of technologies, & 
