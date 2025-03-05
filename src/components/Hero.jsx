@@ -18,7 +18,7 @@ const Hero = () => {
           <h1
             className={`lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] bg-gradient-to-br from-slate-100 to-sky-200 font-extrabold mt-10 tracking-wider max-w-full xl:max-w-full text-transparent bg-clip-text`}
           >
-            FRONTEND DEVELOPER
+            SOFTWARE ENGINEER 
           </h1>
           <div className="mt-8 xl:flex xl:flex-col xl:items-center xl:justify-center xl:text-2xl">
             <p className={` mb-5 text-white-100`}>
